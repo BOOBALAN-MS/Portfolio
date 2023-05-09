@@ -1,0 +1,23 @@
+#card {
+    background-color: #312f31;
+    border: 3px solid whitesmoke;
+    border-radius: 30px;
+
+    p {
+        // font-size: calc(15px + 10vw);
+        font-size: calc(15px + 1vw);
+
+        span {
+            color: rgb(19, 201, 192);
+        }
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;;
+        }
+
+        i {
+            color: rgb(19, 201, 192);
+        }
+    }
+}

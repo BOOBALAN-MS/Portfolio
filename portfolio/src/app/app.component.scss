@@ -1,0 +1,33 @@
+#mainPage--content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #312f31;
+    background-image: linear-gradient(0deg, #312f31 0%, #0f1414 100%);
+}
+
+#mainPage--content__navbar {
+    width: 100vw;
+}
+
+#mainPage--content__insideDiv {
+    width: 100vw;
+    height: 90vh;
+}
+
+#mainPage--content__navbar--forMobile {
+    display: none;
+}
+
+@media (max-width:320px)
+{
+    // #mainPage--content {
+    //     width: 100vw;
+    //     height: auto;
+    //     background-color: #312f31;
+    //     background-image: linear-gradient(0deg, #312f31 0%, #0f1414 100%);
+    // }
+    #mainPage--content__navbar {
+        // width: 100vw;
+        display: none;
+    }
+}
