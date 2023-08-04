@@ -1,0 +1,180 @@
+<div class="main--div">
+    <div class="side--div">
+        <div class="mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 239 235"
+                fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.73298 57.6322C19.3492 41.2591 31.9905 24.991 49.7303 12.4549H147.365L0.742188 234.347H183.58L203.712 173.085C185.394 192.901 166.576 215.713 130.913 225.411L42.7132 225.648L191.175 0.759797L22.9235 0.470703L7.75926 57.6585L7.73298 57.6322Z"
+                    fill="#00AEEF" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M185.156 144.913L238.533 118.764L229.098 175.373L223.816 139.867L185.156 144.913Z"
+                    fill="#00AEEF" />
+            </svg></div>
+        <div class="mt-5">
+            <i class="bi bi-file-bar-graph" style="color: white; font-size: 19px;"></i>
+        </div>
+        <div class="mt-4">
+            <i class="bi bi-graph-down-arrow" style="color: white; font-size: 19px;"></i>
+        </div>
+        <div class="mt-4">
+            <i class="bi bi-bar-chart" style="color: white; font-size: 19px;"></i>
+        </div>
+
+        <div class="mt-auto">
+            <i class="bi bi-gear" style="color: white; font-size: 19px;"></i>
+        </div>
+        <div class="mt-4">
+            <img src="../../../assets//images/profile.jpg" alt="" class="border border-primary rounded-circle"
+                width="40" height="40">
+        </div>
+    </div>
+    <div class="container-xxl">
+        <div class="headings mt-3 d-flex">
+            <div>
+                <mat-chip-listbox aria-label="Fish selection" class="mx-auto">
+                    <mat-chip-option selected>Manufacturing</mat-chip-option>
+                    <mat-chip-option>Engineering</mat-chip-option>
+                    <!-- <mat-chip-option color="accent" selected>Accent fish</mat-chip-option>
+                    <mat-chip-option color="warn">Warn fish</mat-chip-option> -->
+                </mat-chip-listbox>
+            </div>
+            <div class="ms-auto me-5">
+                <input type="text" class="form-control" placeholder="search by project name">
+            </div>
+        </div>
+
+        <div class="card--details">
+            <div class="card" style="width: 24rem;" *ngFor="let data of datas">
+                <div class="card-body">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-6">
+                            <div>
+                                <p class="customer--name" matTooltipClass="customerName"
+                                    matTooltip="{{data.customerName | uppercase}}">{{data.customerName | uppercase}}</p>
+                            </div>
+                            <div>
+                                <span>customer name</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <p class="project--name" matTooltipClass="projectName"
+                                    matTooltip="{{data.projectName | uppercase}}">{{data.projectName | uppercase}}</p>
+                            </div>
+                            <div>
+                                <span>project name</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centered-content-status mt-4">
+                        <div class="d-inline-flex">
+                            <p class="border rounded p-3">{{data.status}}</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <div>
+                            <p class="order--quantity">{{data.orderQty}}</p>
+                        </div>
+                        <div>
+                            <span>orderQty</span>
+                        </div>
+                    </div>
+                    <div class="centered-content mt-3">
+                        <div class="download--all__icon">
+                            <i class="bi bi-download"></i>
+                        </div>
+                        <div class="view--details d-inline-flex p-2" (click)="projectDetails(data)">
+                            <!-- <div><i class="bi bi-arrow-right-circle"></i></div> -->
+                            <div>
+                                <p>View details</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <div class="row justify-content-between p-2">
+                <div class="col-6">
+                    <div>
+                        <p>GOOGLE</p>
+                    </div>
+                    <div>
+                        <span>customer name</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <p>PROJECT TEST</p>
+                    </div>
+                    <div>
+                        <span>project name</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="border rounded p-3">Pending from engineer</p>
+            </div>
+            <div class="text-center mt-3">
+                <div>
+                    <p>1000</p>
+                </div>
+                <div>
+                    <span>orderQty</span>
+                </div>
+            </div>
+            <div class="centered-content mt-3">
+                <div class="d-inline-flex border rounded p-3">
+                    <div><i class="bi bi-arrow-right-circle"></i></div>
+                    <div class="ms-3">
+                        <p>view more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <div class="row justify-content-between p-2">
+                <div class="col-6">
+                    <div>
+                        <p>GOOGLE</p>
+                    </div>
+                    <div>
+                        <span>customer name</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <p>PROJECT TEST</p>
+                    </div>
+                    <div>
+                        <span>project name</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="border rounded p-3">Pending from engineer</p>
+            </div>
+            <div class="text-center mt-3">
+                <div>
+                    <p>1000</p>
+                </div>
+                <div>
+                    <span>orderQty</span>
+                </div>
+            </div>
+            <div class="centered-content mt-3">
+                <div class="d-inline-flex border rounded p-3">
+                    <div><i class="bi bi-arrow-right-circle"></i></div>
+                    <div class="ms-3">
+                        <p>view more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+        </div>
+    </div>
+</div>

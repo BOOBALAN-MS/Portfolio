@@ -1,0 +1,122 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.main--div {
+    background: #15161A;
+    min-height: 100vh;
+    display: flex;
+}
+
+.side--div {
+    background: #1B1C20;
+    max-height: 100vh;
+    max-width: 60px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    p {
+        color: white;
+    }
+
+    i:hover {
+        background: #2e2e30;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+.headings {
+    padding: 20px;
+
+    .form-control {
+        background-color: #1B1C20;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: #0AFEC0;
+        box-shadow: 0 0 5px #0AFEC0;
+    }
+
+}
+
+.card--details {
+    padding: 20px;
+    display: flex;
+    // justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    background: #1B1C20;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-height: 318px;
+
+    span {
+        color: grey;
+    }
+
+    .customer--name {
+        width: 20ch;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .project--name {
+        width: 20ch;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .centered-content-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .order--quantity {
+        color: #0AFEC0;
+    }
+
+    .centered-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .view--details {
+            border-radius: 10px;
+            background: #49f7cbb5;
+            color: black;
+            font-weight: 500;
+        }
+
+        .download--all__icon:hover {
+            color: #00AEEF;
+        }
+    }
+
+}
+
+.card:hover {
+    background: #2e2e30;
+}
