@@ -1,34 +1,27 @@
 <div id="mainPage--content">
     <div id="mainPage--content__navbar">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary border border-white">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white" routerLink="/">Boobalan.Ms</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="bi bi-arrow-right-circle-fill"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto">
-                        <a class="nav-link text-white" routerLink="/homepage">Home</a>
-                        <a class="nav-link text-white" routerLink="/experience">Experience</a>
-                        <a class="nav-link text-white" routerLink="/about">Skills & Technologies</a>
-                        <a class="nav-link text-white" routerLink="/projects">Projects</a>
-                        <a class="nav-link text-white" routerLink="/education">Education</a>
-                        <a class="nav-link text-white" routerLink="/contact">Contact</a>
-                    </div>
-                </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary border border-white">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" routerLink="/">Boobalan.Ms</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-arrow-right-circle-fill"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link text-white" data-bs-toggle="collapse" routerLink="/homepage" routerLinkActive="active">Home</a>
+              <a class="nav-link text-white" data-bs-toggle="collapse" routerLink="/experience" routerLinkActive="active">Experience</a>
+              <a class="nav-link text-white" routerLink="/about" routerLinkActive="active">Skills & Technologies</a>
+              <a class="nav-link text-white" routerLink="/projects" routerLinkActive="active">Projects</a>
+              <a class="nav-link text-white" routerLink="/education" routerLinkActive="active">Education</a>
+              <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active">Contact</a>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </div>
-    <!-- <div id="mainPage--content__navbar--forMobile" class="d-flex mx-auto">
-        <i class="bi bi-house-door-fill"></i>
-        <i class="bi bi-book"></i>
-        <i class="bi bi-pc-display"></i>
-        <i class="bi bi-file-person"></i>
-        <i class="bi bi-telephone"></i>        
-    </div> -->
     <div id="mainPage--content__insideDiv" class="d-flex justify-content-center align-items-center">
-       <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
     </div>
-</div>
+  </div>
+  
